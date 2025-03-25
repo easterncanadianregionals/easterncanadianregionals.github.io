@@ -29,7 +29,7 @@
 @media screen and (max-width:992px){
 	nav.navbar.bootsnav .navbar-collapse.collapse.in {padding-bottom: 30px;}
 	nav.navbar.bootsnav .navbar-brand {padding: 25px;}
-	nav.navbar.bootsnav ul.nav > li > a {padding: 15px 0px;border: transparent;}
+	nav.navbar.bootsnav ul.nav > li > a {padding: 15px 0px;border: transparent; font-size: 30px;}
 	.wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a {padding: 15px 0px;}
 }/*max-width:992px*/
 
@@ -71,7 +71,7 @@
 	.footer-menu ul.footer-menu-item {text-align: left;margin-top: 20px;}
 	.footer-menu ul.footer-menu-item li a {padding-right: 15px;padding-left: 0;margin-bottom: 15px;}
     
-    #content {width: 95%; font-size: 15px;}
+    #content {width: 95%;}
     #content h1 { font-size: 25px;}
 	
 }/*max-width:767px*/
