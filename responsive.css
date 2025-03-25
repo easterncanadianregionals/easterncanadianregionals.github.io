@@ -107,11 +107,16 @@
 	.footer-social span {display: block;margin-bottom: 15px;}
 }/*max-width:399px*/
 	
-@media screen and (max-width:350px){
+@media screen and (max-width:380px){
 	nav.navbar.bootsnav .navbar-toggle {margin-right: -25px;left:-10px;}
 	nav.navbar.bootsnav .navbar-brand {padding:25px 0;font-size: 20px;}
 	.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand, .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:hover,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:focus {padding: 25px 0px;}
 	.subscription-input-group .subscription-input-form {width: 220px;}
+    
+    #socials-button {
+        width: 100%;
+        font-size: 1.1em;
+    }
 }/*max-width:350px*/
 
 @media screen and  (max-width: 320px){
