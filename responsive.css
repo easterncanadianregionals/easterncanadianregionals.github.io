@@ -72,8 +72,11 @@
 	.footer-menu ul.footer-menu-item li a {padding-right: 15px;padding-left: 0;margin-bottom: 15px;}
     
     #content {width: 95%;}
-    #content h1 { font-size: 25px; margin-top: 5px;}
+    #content h1 { font-size: 25px;}
+    #content h1:first-child { margin-top: 0px; }
     #content h3 { font-size: 20px;}
+    
+    
     #welcome h1 { font-size: 30px;}
     #welcome #hashtag { font-size: 25px;}
 	
