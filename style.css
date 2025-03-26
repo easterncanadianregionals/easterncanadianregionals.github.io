@@ -137,6 +137,32 @@ td {
     border: 3px solid #333;
 }
 
+#welcome {
+    margin-bottom: 0px;
+    padding-top: 30px;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background-image: url('web_bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Oswald;
+}
+
+#welcome h1 {
+    font-size: 38px;
+    letter-spacing: 5px;
+    line-height: 1.2em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#welcome #hashtag {
+	font-family: Arial;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
 #gold-sponsor-logos {
     position: relative;
     left: -200px;
