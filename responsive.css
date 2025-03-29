@@ -79,6 +79,11 @@
     
     #welcome h1 { font-size: 30px;}
     #welcome #hashtag { font-size: 25px;}
+    #welcome img {
+        width: 75%;
+    }
+    
+}
 	
 }/*max-width:767px*/
 

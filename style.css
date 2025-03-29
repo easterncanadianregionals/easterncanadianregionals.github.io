@@ -163,6 +163,13 @@ td {
     letter-spacing: 2px;
 }
 
+#welcome img {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    max-width: 320px;
+    width: 90%;
+}
+
 #gold-sponsor-logos {
     position: relative;
     left: -200px;
