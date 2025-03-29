@@ -76,12 +76,10 @@
     #content h1:first-child { margin-top: 0px; }
     #content h3 { font-size: 20px;}
     
-    
+    #welcome { padding-top: 10px; height: 600px; }
     #welcome h1 { font-size: 30px;}
     #welcome #hashtag { font-size: 25px;}
-    #welcome img {
-        width: 75%;
-    }
+    #welcome img { width: 75%; }
     
 }
 	
