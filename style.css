@@ -46,7 +46,7 @@ body {
     width: 800px;
     margin: auto;
     padding-top: 50px;
-    padding-bottom: 250px;
+    padding-bottom: 150px;
     min-height: 100%;
 }
 
@@ -177,6 +177,11 @@ td {
     width: 1200px;
 }
 
+#gold-sponsor-logos h1 {
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
 #organizer-logos, #sponsor-logos {
     text-align: center;
 }
@@ -187,7 +192,7 @@ td {
     opacity: 0.8;
 }
 #gold-sponsor-logos img {
-    margin: 10px 5px;
+    margin: 0px 10px 20px 10px;
 }
 #gold-sponsor-logos img.squeeze {
     margin: auto -5px auto -5px;

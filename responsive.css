@@ -81,6 +81,12 @@
     #welcome #hashtag { font-size: 25px;}
     #welcome img { width: 75%; }
     
+    #sponsor-footer h1 { font-size: 30px; }
+    
+    #gold-sponsor-logos { 
+        width: 100%;
+        left: 0;
+    }
 }
 	
 }/*max-width:767px*/
