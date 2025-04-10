@@ -39,28 +39,34 @@
     color: #DDDDDD;
     text-decoration: line-through;
 }
+
+#fees-table {
+}
  
-.fees-row {
+#fees-table tr {
     margin: 3px auto;
-    padding: 10px;
     background-color: #333333;
     width: 360px;
+    height: 60px;
+    border: 5px solid black;
 }
-.fees-row:hover {
+#fees-table tr:hover {
     background-color: #555555;
 }
  
-.fees-cell {
-    display: inline-block;
-    padding: 0px 0px 0px 10px;
-    width: 180px;
+#fees-table td {
+    width: 150px;
+    border-right-style: none;
+    border-left-style: none;
 }
-.fees-total {
-    background-color: #333377;
-    padding: 10px 0px 10px 30px;
+
+#fees-table td:first-child {
+    padding: 0px 0px 0px 20px;
     width: 350px;
-    border-radius: 0px;
-    margin: auto;
+}
+
+#fees-table-total {
+    background-color: #333377 !important;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -81,6 +87,7 @@ select {
     border: 1px solid #999999;
     padding: 0px 15px;
     font-size: 15px;
+    color: #000
 }
 
 #testbox {

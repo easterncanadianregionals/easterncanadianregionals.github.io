@@ -87,6 +87,10 @@
         width: 100%;
         left: 0;
     }
+    
+    #fees-table {
+        font-size: 16px;
+    }
 }
 	
 }/*max-width:767px*/
