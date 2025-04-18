@@ -1,18 +1,6 @@
 function showOneSponsor(elem, url, imgsrc, alt, width, target="_blank") {
-    var link = document.createElement("a");
-    link.target = target;
-    link.href = url;
-
-    var img = document.createElement("img");
-    img.src = imgsrc;
-    img.width = width;
-    img.alt = alt;
-
-    elem.appendChild(link).appendChild(img);
-}
-
-function br(elem) {
-    elem.appendChild(document.createElement("br"));
+    img = "<a href='" + url + "' target='" + target + "'><img src='" + imgsrc + "' width='" + width + "px' alt='" + alt + "'>";
+    elem.append(img);
 }
     
 function genRandArray(max) {
@@ -48,36 +36,26 @@ function loadOneGoldSponsor(num, elem, scale) {
             showOneSponsor(elem, "https://truearcreturntops.ca/", "sponsors/TrueArc.png", "True Arc Return Tops", 300*scale);
             break;
         case 6:
-            showOneSponsor(elem, "https://www.gsquaredyoyos.com/store/", "sponsors/GSquared.png", "G Squared", 240*scale);
+            showOneSponsor(elem, "https://www.gsquaredyoyos.com/", "sponsors/GSquared.png", "G Squared", 240*scale);
+            break;
+        case 7:
+            showOneSponsor(elem, "https://onedropyoyos.com/", "sponsors/onedrop.png", "OneDrop Yoyos", 410*scale);
             break;
     }
 }
 
 function loadGoldSponsors(id, scale) {
-    elem = document.getElementById(id);
-    br(elem);
+    elem = $("#"+id);
     
-    numSponsors = 7;
-//     numPerRow = 3;
-// 
-//     screen_width = $(document).width();
-//     if (screen_width < 700) {
-//         scale *= 0.7;
-//         numPerRow = 2;
-//     } else if (screen_width < 500) {
-//         numPerRow = 1;
-//     }
-    
+    numSponsors = 8;
+
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
         loadOneGoldSponsor(order[i], elem, scale);
-//         if (((i + 1) % numPerRow) == 0) {
-//             br(elem);
-//             br(elem);
-//         }
     }
     
-    sponsors_height = $("#sponsor-footer").css("height");
-    $("#content").css("padding-bottom", "+="+sponsors_height);    
+    if (scale > 0.5) {
+        elem.children('a').children().css('margin', '15px 20px');
+    }
 }
 

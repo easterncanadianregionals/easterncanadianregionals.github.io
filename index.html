@@ -100,7 +100,12 @@
     <script src="bootsnav.js"></script>
     <script src="sponsors.js"></script>
     <script>
-        loadGoldSponsors("gold-sponsor-logos", 0.6);
+        scale = 0.6;
+        screen_width = $(document).width();
+        if (screen_width < 700) {
+            scale *= 0.5;
+        }
+        loadGoldSponsors("gold-sponsor-logos", scale);
     </script>
 
 
