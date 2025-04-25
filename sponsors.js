@@ -59,3 +59,9 @@ function loadGoldSponsors(id, scale) {
     }
 }
 
+function loadSilverSponsors(id, scale) {
+    elem = $("#"+id);
+    
+    showOneSponsor(elem, "https://duncantoys.com/", "sponsors/duncan.png", "Duncan Toys", 230*scale);
+}
+
