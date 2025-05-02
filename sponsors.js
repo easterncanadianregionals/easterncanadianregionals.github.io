@@ -41,13 +41,16 @@ function loadOneGoldSponsor(num, elem, scale) {
         case 7:
             showOneSponsor(elem, "https://onedropyoyos.com/", "sponsors/onedrop.png", "OneDrop Yoyos", 410*scale);
             break;
+        case 8:
+            showOneSponsor(elem, "https://spintektoys.com", "sponsors/spintek.png", "SpinTek Toys", 320*scale);
+            break;
     }
 }
 
 function loadGoldSponsors(id, scale) {
     elem = $("#"+id);
     
-    numSponsors = 8;
+    numSponsors = 9;
 
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
