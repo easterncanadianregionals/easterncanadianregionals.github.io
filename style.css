@@ -207,7 +207,7 @@ td {
    /* opacity: 0.5;*/
 }
 
-#fb, #sport-ladder-videos , #music-button, #waiver-form-button, #check-button, #socials-button {
+#fb, #sport-ladder-videos , #music-button, #results-button, #check-button, #socials-button {
     display: block;
     text-align: center;
     margin: 30px auto;
@@ -234,8 +234,10 @@ td {
     width: 200px;
     font-size: 20px;
 }
-#waiver-form-button {
+#results-button {
     background-image: url('form_icon.png');
+    width: 140px;
+    font-size: 20px;
 }
 #sport-ladder-videos {
     font-size: 18px;
@@ -245,7 +247,7 @@ td {
 #check-button {
     background-image: url('check_icon.png');
 }
-#fb:hover , #sport-ladder-videos:hover, #music-button:hover, #waiver-form-button:hover, #check-button:hover, #socials-button:hover {
+#fb:hover , #sport-ladder-videos:hover, #music-button:hover, #results-button:hover, #check-button:hover, #socials-button:hover {
     background-color: #550000;
 }
 
