@@ -20,12 +20,17 @@
 
 <style>
 
-tr:nth-child(odd) {
-    background-color: #222;
+#content img {
+    display: block;
+    margin: auto;
 }
 
-td {
-    border: 0px;
+@media screen and (max-width:700px) {
+    #content img {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
 }
 </style>
 
@@ -59,9 +64,19 @@ td {
 
     <div id="content">
 
-        <h1>Performance order and results</h1>
+        <!--<h1>Performance order and results</h1>-->
         
-
+        <h1>List of contestants - Championship 1A division</h1>
+        <p>(In alphabetical order)</p>
+        <img src='result_files/list_1A.png' width='400px'/>
+        
+        <h1>List of contestants - Championship Open division</h1>
+        <p>(In alphabetical order)</p>
+        <img src='result_files/list_open.png' width='500px'/>
+        
+        <h1>List of contestants - Junior division</h1>
+        <p>(In alphabetical order)</p>
+        <img src='result_files/list_junior.png' width='500px'/>
         
     </div>
     
