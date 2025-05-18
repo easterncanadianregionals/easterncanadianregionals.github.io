@@ -148,88 +148,9 @@ function checkstyle()
 
         <h1>Registration</h1>
         
-        <p>Registration is required for all contestants entering Championship and Junior divisions.
-        Spectators may attend the event for free.</p>
+        <p>Registration and music upload are now closed. See you on Sunday!!</p>
         
-        <h1>Step 1: Registration fee</h1>
-        
-        <p>Please review the contest's <a href="format.html">format</a> carefully, and select the division(s)
-        you'd like to enter. Then click the "Fee payment" button which will bring you to the payment processing page. </p>
-        
-        <ul>
-            <li>You can have someone else (parent, friend, etc) pay for you. In step 2 below, you will enter the actual contestant's information.</li>
-            <li>Payment is processed by PayPal, but you can pay as a guest using a credit card without a PayPal account.</li>
-            <li>If this does not work, please <a href="mailto:canadianyoyoassociation@gmail.com">contact the organizer</a> for alternatives.
-        </ul>
-        
-        <form onsubmit="return checkstyle();" target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-
-            <input type="hidden" name="business" value="wayne.ngan@gmail.com">
-
-            <input type="hidden" name="cmd" value="_xclick">
-            
-            <table id="fees-table">
-            
-            <tr>
-                <td><input type="checkbox" name="division" id="1a_div" onclick="getPrice();">&nbsp;&nbsp;Championship 1A</td><td>$40</td>
-            </tr>
-            
-            <tr>
-                <td><input type="checkbox" name="division" id="open_div" onclick="getPrice();">&nbsp;&nbsp;Championship Open&nbsp;&nbsp;
-                    <select name="open-style">
-                            <option value="INVALID">Style</option>
-                            <option value="2A">2A</option>
-                            <option value="3A">3A</option>
-                            <option value="4A">4A</option>
-                            <option value="5A">5A</option>
-                        </select>
-                </td><td>$40</td>
-            </tr>
-            
-            <tr>
-                <td><input type="checkbox" name="division" id="int_div" onclick="getPrice();">&nbsp;&nbsp;Junior</td><td>$30</td>
-            </tr>
-            
-            <tr id="fees-table-total">
-                <td>Total (CAD)</td><td id="amount-display">$0</td>
-            </tr>
-            </table>
-            
-
-            
-            <input type="hidden" name="item_name" value="INVALID REGISTRATION">
-            <input type="hidden" name="amount" value="0">
-            
-            <input type="hidden" name="currency_code" value="CAD">
-
-            <div align="center">
-            <script type="text/javascript">
-            <!--
-                document.write('<input type="submit" class="register_button" value="Fee payment">');
-            //-->
-            </script>
-            <noscript>
-                <div class="register_button" id="disabled">Register</div>
-                <p><span style="font-weight:bold;color:red;">PLEASE ENABLE JAVASCRIPT IN ORDER TO REGISTER.</span></p>
-            </noscript>
-            </div>
-        </form>
-    
-        <h1>Step 2: Music upload</h1>
-        <p>In this step you will enter your contestant information and upload the music for your routine(s).</p>
-        <ul>
-            <li>If you paid your fee <strong>on or after May 11</strong>, go ahead and submit your music using the link below.</li>
-            <li>If you paid your fee <strong>before May 11</strong> and you need to upload music now, there is a $15 late fee.
-            Please <a href="mailto:canadianyoyoassociation@gmail.com">contact the organizer</a> for arrangements to pay this fee.</li>
-            <li>The <strong>FINAL</strong> deadline for submitting music is <strong>Saturday May 17</strong>. No music will be accepted on
-            the day of the contest</li>
-        </ul>
-        <a id="music-button" href="https://forms.gle/6rMGhoQC93z2JyFf7" target="_blank">Upload music</a>
-
-    
-        <h1>That's it!</h1>
-        <p>Once you have paid your fee and uploaded your music, your registration is complete.
-        For the latest updates or any questions, please find CANYA on social media!</p>
+        <p>For the latest updates or any questions, please find CANYA on social media!</p>
         <a id="socials-button" href="https://linktr.ee/canadianyoyoassociation" target="_blank">&#64;canadianyoyoassociation</a>
         
     </div>
