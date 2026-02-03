@@ -30,19 +30,10 @@ function loadOneGoldSponsor(num, elem, scale) {
             showOneSponsor(elem, "https://www.c3yoyodesign.com/", "sponsors/c3yoyodesign.png", "C3yoyodesign", 400*scale);
             break;
         case 4:
-            showOneSponsor(elem, "https://www.yoyosam.com/", "sponsors/yoyosam.png", "YoYoSam", 300*scale);
-            break;
-        case 5:
-            showOneSponsor(elem, "https://truearcreturntops.ca/", "sponsors/TrueArc.png", "True Arc Return Tops", 300*scale);
-            break;
-        case 6:
-            showOneSponsor(elem, "https://www.gsquaredyoyos.com/", "sponsors/GSquared.png", "G Squared", 240*scale);
-            break;
-        case 7:
             showOneSponsor(elem, "https://onedropyoyos.com/", "sponsors/onedrop.png", "OneDrop Yoyos", 410*scale);
             break;
-        case 8:
-            showOneSponsor(elem, "https://spintektoys.com", "sponsors/spintek.png", "SpinTek Toys", 320*scale);
+        case 5:
+            showOneSponsor(elem, "https://yoyoexpert.com/", "sponsors/yoyoexpert.png", "YoYoExpert", 410*scale);
             break;
     }
 }
@@ -50,7 +41,7 @@ function loadOneGoldSponsor(num, elem, scale) {
 function loadGoldSponsors(id, scale) {
     elem = $("#"+id);
     
-    numSponsors = 9;
+    numSponsors = 6;
 
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
