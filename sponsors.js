@@ -56,6 +56,6 @@ function loadGoldSponsors(id, scale) {
 function loadSilverSponsors(id, scale) {
     elem = $("#"+id);
     
-    showOneSponsor(elem, "https://duncantoys.com/", "sponsors/duncan.png", "Duncan Toys", 230*scale);
+    showOneSponsor(elem, "https://www.yoyosam.com/", "sponsors/yoyosam.png", "YoYoSam", 190*scale);
 }
 
