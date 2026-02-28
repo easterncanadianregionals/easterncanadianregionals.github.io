@@ -35,13 +35,19 @@ function loadOneGoldSponsor(num, elem, scale) {
         case 5:
             showOneSponsor(elem, "https://yoyoexpert.com/", "sponsors/yoyoexpert.png", "YoYoExpert", 410*scale);
             break;
+        case 6:
+            showOneSponsor(elem, "http://magicyoyo.cn/", "sponsors/magicyoyo.png", "MagicYoYo", 410*scale);
+            break;
+        case 7:
+            showOneSponsor(elem, "https://truearcreturntops.ca/", "sponsors/TrueArc.png", "True Arc Return Tops", 300*scale);
+            break;
     }
 }
 
 function loadGoldSponsors(id, scale) {
     elem = $("#"+id);
     
-    numSponsors = 6;
+    numSponsors = 8;
 
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
@@ -57,5 +63,6 @@ function loadSilverSponsors(id, scale) {
     elem = $("#"+id);
     
     showOneSponsor(elem, "https://www.yoyosam.com/", "sponsors/yoyosam.png", "YoYoSam", 190*scale);
+    showOneSponsor(elem, "https://mk1yoyos.com/", "sponsors/mk1yoyos.png", "Mk1 Yoyos", 140*scale);
 }
 
