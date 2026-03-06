@@ -41,13 +41,16 @@ function loadOneGoldSponsor(num, elem, scale) {
         case 7:
             showOneSponsor(elem, "https://truearcreturntops.ca/", "sponsors/TrueArc.png", "True Arc Return Tops", 300*scale);
             break;
+        case 8:
+            showOneSponsor(elem, "https://offsetyoyo.com/products/cheatcode", "sponsors/cheatcode.png", "CHEATCODE", 450*scale);
+            break;
     }
 }
 
 function loadGoldSponsors(id, scale) {
     elem = $("#"+id);
     
-    numSponsors = 8;
+    numSponsors = 9;
 
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
