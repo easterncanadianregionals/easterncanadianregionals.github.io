@@ -36,7 +36,7 @@ function getPrice()
 
     if(divs[2].checked) /* junior */
     {
-        total = 20;
+        total = 35;
         div_str = div_str + "Junior";
         total_str = "$" + total;
 
@@ -56,22 +56,23 @@ function getPrice()
     
         if(divs[0].checked && divs[1].checked)
         {
-            total = 50;
+            total = 100;
             
             var open_style = document.getElementsByName("open-style");
             div_str = div_str + "1A, Open (" + open_style[0].value + ")";
             
-            total_str = "<span style='text-decoration: line-through; text-decoration-thickness: 3px;'>$70</span> $50"
+            //total_str = "<span style='text-decoration: line-through; text-decoration-thickness: 3px;'>$70</span> $50"
+            total_str = "$" + total;
         }
         else if(divs[0].checked)
         {
-            total = 35;
+            total = 50;
             div_str = div_str + "1A"
             total_str = "$" + total;
         }
         else if(divs[1].checked)
         {
-            total = 35;
+            total = 50;
             
             var open_style = document.getElementsByName("open-style");
             div_str = div_str + "Open (" + open_style[0].value + ")";     
@@ -149,8 +150,7 @@ function checkstyle()
             <li>Paying registration fee</li>
             <li>Uploading freestyle music</li>
         </ol>
-        <p>These two steps can be completed separately any time before the contest, but please keep in mind that
-        <strong>after Sunday March 15 the registration fee will increase.</strong> So make sure to register early!</p>
+        <p>These two steps can be completed separately any time before the contest.</p>
         
         <p>No fees or music will be accepted on the day of the contest.</p>
         
@@ -174,7 +174,7 @@ function checkstyle()
             <table id="fees-table">
             
             <tr>
-                <td><input type="checkbox" name="division" id="1a_div" onclick="getPrice();">&nbsp;&nbsp;Championship 1A</td><td>$35</td>
+                <td><input type="checkbox" name="division" id="1a_div" onclick="getPrice();">&nbsp;&nbsp;Championship 1A</td><td>$50</td>
             </tr>
             
             <tr>
@@ -186,11 +186,11 @@ function checkstyle()
                             <option value="4A">4A</option>
                             <option value="5A">5A</option>
                         </select>
-                </td><td>$35</td>
+                </td><td>$50</td>
             </tr>
             
             <tr>
-                <td><input type="checkbox" name="division" id="int_div" onclick="getPrice();">&nbsp;&nbsp;Junior</td><td>$20</td>
+                <td><input type="checkbox" name="division" id="int_div" onclick="getPrice();">&nbsp;&nbsp;Junior</td><td>$35</td>
             </tr>
             
             <tr id="fees-table-total">
@@ -220,9 +220,16 @@ function checkstyle()
     
         <h1>Step 2: Music upload</h1>
         <p>In this step you will enter your contestant information and upload the music for your freestyle routine(s).</p>
-        <p>You can upload or change your music as many time as you like until <strong>Sunday March 15</strong>.
-        After that, a late fee will apply.</p>
-        <p>No music will be accepted on the day of the contest.</p>
+        <ul>
+            <li>If you paid your registration fee on or before March 15, <strong>there is now an additional $15 CAD late fee.</strong>
+            Please <a href="mailto:canadianyoyoassociation@gmail.com">contact the organizer</a> to arrange this payment. If you do not pay this fee,
+            then your music submission will not be processed, and a random music will be assigned for your freestyle.</li>
+            
+            <li>If you paid your registration fee after March 15, then your late fee is already included. Please use the form
+            below to submit your music.</li>
+        </ul>
+
+        <p>Please note that the hard deadline for music submission is March 21. No music will be accepted on the day of the contest.</p>
         <a id="music-button" href="https://forms.gle/o7rmnVcL7cwY2HGz8" target="_blank">Upload music</a>
 
     
